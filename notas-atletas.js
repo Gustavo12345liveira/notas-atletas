@@ -19,11 +19,20 @@ let atletas = [
 
 function algumaCoisa(matriz) {
     for (let i = 0; i < matriz.length; i++) {
-
+        media = obterMedia(matriz[i]['notas'])
+        console.log() 
+        console.log()
+        console.log()
     }
 }
 
 function obterMedia(listaNotas) {
-    listaNotas.shift
-}
-
+    listaNotas.shift()
+    listaNotas.pop()
+    let sum = listaNotas.reduce(function(a, b){
+      return a + b;
+    });
+    return sum / listaNotas.length
+} 
+    
+algumaCoisa(atletas)
